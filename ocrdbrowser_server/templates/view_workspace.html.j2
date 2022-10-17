@@ -9,12 +9,19 @@
 </head>
 
 <body>
-    <h1>Workspaces</h1>
-    <ul>
-        {% for w in workspaces %}
-        <li><a href="/browse/{{ w }}"> {{ w }}</a></li>
-        {% endfor %}
-    </ul>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <iframe src="/browser/" frameborder="0"></iframe>
 </body>
 
 </html>
